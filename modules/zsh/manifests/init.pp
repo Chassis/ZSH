@@ -21,7 +21,7 @@ class zsh (
 	}
 
 	if ( latest == $package ) {
-		exec { 'sudo chsh -s /usr/bin/zsh':
+		exec { 'sudo chsh -s /usr/bin/zsh vagrant':
 			path    => '/bin:/usr/bin',
 			require => Package['zsh']
 		}
